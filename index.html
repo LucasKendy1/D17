@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow.OS</title>
+    <link rel="stylesheet" href="estilos/stdstyle.css" media="all">
+    <link rel="stylesheet" href="estilos/indexstyle.css" >
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div id="ilogo">
+            <img src="imagens/osicon.svg" alt="">
+            <h1>Rainbow</h1>
+            <h2>OS</h2>
+        </div>
+        <div id="divisao"></div>
+        <div id="iinputs">
+            <div id="iperfil">
+                <img src="imagens/perfil.svg" alt="" id="iimgperfil">
+                <h3>Lucas Kendy</h3>
+                <h4>type your password</h4>
+                <input type="password" id="pass">
+                <input type="button" onclick="verificar()" id="iverificar" class="inputicon">
+                <input type="button" onclick="dica()" id="idica" class="inputicon">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <input type="button" value="" onclick="turnoff()" id="iturnoff" class="inputicon">
+        <h2>Turn off computer</h2>
+    </footer>
+
+    <script>
+        function verificar(){
+            var password=document.getElementById('pass')
+            var msg=document.getElementById('msg')
+            if(password.value!='abc'){
+                window.alert("Senha Incorreta!")
+            }
+            else{
+                window.location.href='welcome.html'
+            }
+            password.value=''
+            password.focus()
+        }
+        function dica(){
+            window.alert("Tente abc")
+        }
+        function turnoff(){
+            window.location.href='off.html'
+        }
+    </script>
+</body>
+</html>

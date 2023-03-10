@@ -1,0 +1,113 @@
+@media screen and (max-width:768px){
+    #idica,#iverificar,#iturnoff{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    #idica, #iverificar{
+       position: relative;
+    }
+    #idica{
+        background-image: url(../imagens/interrogacao.svg);
+        left: 125px;
+        margin-top: 10px;
+    }
+
+    #iverificar{
+        background-image: url(../imagens/enter.svg);
+        left: 125px;
+        margin-top: 10px;
+    }
+
+    #iturnoff{
+        position: relative;
+        background-image: url(../imagens/turnoff.svg);
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .inputicon:hover{
+        cursor: pointer;
+    }
+    footer>h2{
+        position: relative;
+        font-family: monocraft;
+        color: white;
+        line-height: 50%;
+        transform: translateY(-50%);
+        display: block;
+        margin-left:100px;
+    }
+    #ilogo, #iinputs{
+        width: 90%;
+        height: 50%;
+        margin: auto;
+    }
+    img{
+        position: relative;
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+    div>h1,div>h2{
+        color: white;
+        text-align: center;
+        font-family: monocraft;
+    }
+    div>h1{
+        margin-top: 230px;
+    }
+    div>h2{
+        color: red;
+    }
+    #pass{
+        width: 160px;
+        height: 50px;
+        border: 2px solid black;
+        position: relative;
+        left: 120px;
+        transform: translateY(-35%);
+    }
+    #iperfil{
+        background-color: #4835F0;
+        width: 90%;
+        display: block;
+        margin: auto;
+        height: 25%;
+        border:5px solid #78bad8;
+        position: relative;
+        top: 70px;
+    }
+    #iimgperfil{
+        display: block;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        margin-left: 15px;
+        transform: translateY(-60%);
+    }
+    h3,h4{
+        padding-left: 130px;
+        color: white;
+        font-family: monocraft;
+        margin-bottom: 10px;       
+    }
+    h3{
+        margin-top: -65px;
+    }
+    div#divisao{
+        position: absolute;
+        width: 400px;
+        height: 5px;
+        background-color: #98c9e0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width:768px){
+
+}
